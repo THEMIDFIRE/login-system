@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login - Login System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+        if (localStorage.getItem('currentUser')) {
+            window.location.href = 'home.html';
+        }
+    </script>
+
+</head>
+
+<body class="bg-dark text-bg-dark">
+
+    <main>
+        <section class="vh-100">
+            <div class="container h-100">
+                <div class="inner h-100 d-flex justify-content-center align-items-center">
+                    <div class="card w-50 bg-light-subtle text-dark shadow-lg">
+                        <div class="card-header">
+                            <h3 class="card-title">Log In</h3>
+                        </div>
+                        <div class="card-body">
+                            <form id="loginForm">
+                                <div class="form-floating mb-1">
+                                    <input type="email" class="form-control border-dark" id="loginEmail"
+                                        placeholder="" />
+                                    <label for="loginEmail">Email address</label>
+
+                                    <div id="loginEmailError" class="bg-danger-subtle text-danger mt-2 p-2 d-none">
+                                    </div>
+                                </div>
+
+                                <div class="form-floating my-3">
+                                    <input type="password" class="form-control border-dark" id="loginPass"
+                                        placeholder="" />
+                                    <label for="loginPass">Password</label>
+                                    <div id="loginPassError" class="bg-danger-subtle text-danger mt-2 p-2 d-none"></div>
+                                </div>
+
+                                <button type="submit" class="btn btn-outline-dark" id="loginBtn">Log in</button>
+
+                                <div id="loginSuccess" class="bg-success-subtle text-success my-2 p-2 d-none"></div>
+                            </form>
+                        </div>
+                        <div class="card-footer">
+                            <p>Don't have an account? <a href="register.html" class="link-body-emphasis">Sign up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

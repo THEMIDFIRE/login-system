@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register - Login System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-dark text-bg-dark">
+
+    <main>
+        <section class="vh-100">
+            <div class="container h-100">
+                <div class="inner h-100 d-flex justify-content-center align-items-center">
+                    <div class="card w-50 bg-light-subtle text-dark shadow-lg">
+                        <div class="card-header">
+                            <h3 class="card-title">Register</h3>
+                        </div>
+                        <div class="card-body">
+                            <form id="registerForm">
+                                <div class="form-floating mb-1">
+                                    <input type="text" class="form-control border-dark" id="regName"
+                                        placeholder=""/>
+                                    <label for="regName">Your Name</label>
+                                    <div id="regNameError" class="bg-danger-subtle text-danger my-2 p-2 d-none"></div>
+                                </div>
+
+                                <div class="form-floating my-3">
+                                    <input type="email" class="form-control border-dark" id="regEmail"
+                                        placeholder=""/>
+                                    <label for="regEmail">Email address</label>
+                                    <div id="regEmailError" class="bg-danger-subtle text-danger my-2 p-2 d-none"></div>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control border-dark" id="regPass"
+                                        placeholder=""/>
+                                    <label for="regPass">Password</label>
+                                    <div id="regPassError" class="bg-danger-subtle text-danger my-2 p-2 d-none"></div>
+                                </div>
+
+                                <button type="submit" class="btn btn-outline-dark" id="regBtn">Register</button>
+
+                                <div id="regSuccess" class="bg-success-subtle text-success my-2 p-2 d-none"></div>
+                            </form>
+                        </div>
+                        <div class="card-footer">
+                            <p>Already have an account? <a href="index.html" class="link-body-emphasis">Log in</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+.form-control {
+    transition: .2s linear;
+}
+.form-control:focus {
+    --bs-border-width: 3px;
+    box-shadow: none;
+}
